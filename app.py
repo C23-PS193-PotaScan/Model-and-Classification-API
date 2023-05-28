@@ -65,7 +65,7 @@ def upload_file():
 if __name__ == '__main__':
     app.run(debug=True,
             host="0.0.0.0",
-            port=int(os.environ.get("PORT", 8080)))
+            port=int(os.environ.get("PORT", 5000)))
 
 '''
 The ALLOWED_EXTENSIONS set is defined with the allowed file extensions as its elements. In this case, the allowed extensions are 'jpg', 'jpeg', and 'png'.
