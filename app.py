@@ -43,6 +43,10 @@ def predict(image_path):
 app  = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+@app.route('/', methods=['GET'])
+def hello_world():
+    return 'Hello, World!'
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
@@ -59,7 +63,9 @@ def upload_file():
         return jsonify({'error' : 'extensi file tidak sesuai, hanya menerima jpg, jpeg, dan png'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True,
+            host="0.0.0.0",
+            port=int(os.environ.get("PORT", 8080)))
 
 '''
 The ALLOWED_EXTENSIONS set is defined with the allowed file extensions as its elements. In this case, the allowed extensions are 'jpg', 'jpeg', and 'png'.
