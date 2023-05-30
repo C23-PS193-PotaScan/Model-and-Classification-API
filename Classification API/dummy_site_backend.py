@@ -10,7 +10,7 @@ model = load_model('./workspace/pld_model.h5')
 uploadedImage = './images/'
 IMAGE_SIZE = (256, 256)
 
-
+# This function to predict the classification of the image
 def predict(uploadedImage, image_path):
     Class = ''
     for fn in os.listdir(uploadedImage):
