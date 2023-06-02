@@ -45,7 +45,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/', methods=['GET'])
 def hello_world():
-    return 'cicd succes!'
+    return 'Response succes!'
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
