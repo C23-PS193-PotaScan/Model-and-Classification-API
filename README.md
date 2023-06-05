@@ -23,9 +23,10 @@ URL: https://model-and-classification-api-fbaiidjkha-uc.a.run.app/
 ```
 
 **POST /upload**
+
 This endpoint is used to classify potato leaf diseases. Users need to upload an image file of a potato leaf for classification.
 
-## Method: POST
+**Method: POST**
 
 URL: https://model-and-classification-api-fbaiidjkha-uc.a.run.app/upload
 
