@@ -16,7 +16,6 @@ URL: https://model-and-classification-api-fbaiidjkha-uc.a.run.app/
 **Response:**
 
 ```json
-Copy code
 {
   "response": "success!"
 }
@@ -36,7 +35,6 @@ file: Image file of the potato leaf (multipart/form-data)
 **Response:**
 
 ```json
-Copy code
 {
   "message": "gambar terkirim",
   "response": "Potato Late Blight"
