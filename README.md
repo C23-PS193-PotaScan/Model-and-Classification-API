@@ -7,6 +7,7 @@ The base URL for accessing the API is: https://model-and-classification-api-fbai
 
 ## Available Endpoints
 **GET /**
+
 This endpoint is used to test the API connectivity. It returns a success message.
 
 Method: GET
@@ -21,7 +22,7 @@ URL: https://model-and-classification-api-fbaiidjkha-uc.a.run.app/
 }
 ```
 
-## POST /upload
+**POST /upload**
 This endpoint is used to classify potato leaf diseases. Users need to upload an image file of a potato leaf for classification.
 
 ## Method: POST
@@ -30,7 +31,7 @@ URL: https://model-and-classification-api-fbaiidjkha-uc.a.run.app/upload
 
 **Parameters:**
 
-file: Image file of the potato leaf (multipart/form-data)
+`file`: Image file of the potato leaf (multipart/form-data)
 
 **Response:**
 
